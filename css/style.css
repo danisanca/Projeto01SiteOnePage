@@ -30,13 +30,14 @@ header{
 }
 .container{
     width: 100%;
-    max-width: 1280px;
+    max-width: 1280px;   
+}
+.col-header{
     height: 70px;
     margin: auto;
     display: flex;
     justify-content: left;
     align-items: center;
-   
 }
 .imglogo img{
     padding:5px;
@@ -64,7 +65,7 @@ color: rgb(33, 82, 175);
 /*===================
 Slider
 =====================*/
-slide-principal{
+.slide-principal{
     display: flex;
 }
 .slide-principal img{
@@ -120,14 +121,60 @@ li.slick-active button{
 }
 .rodape-slide-principal{
     display: flex;
-    background-color: rgb(16, 99, 206);
+    background-color: rgba(16, 99, 206,0.8);
     height: 55px;
     align-items: center;
     justify-content: center;
 
 }
 .rodape-slide-principal p{
-   color: white;
+   color: rgb(255, 255, 255);
    font-size: 2.4rem;
 
+}
+/*===================
+Sobre-nos
+=====================*/
+.Sobre-Nos{
+display: flex;
+justify-content: space-between;
+margin: auto;
+margin-top: 50px;
+height: 85vh;
+
+}
+.img-sobrenos img{
+    width: 60vw;
+    height: 80vh;
+    position: absolute;
+    left:5%;
+    box-shadow: 0 0 2em rgb(71, 71, 71);
+}
+.text-sobrenos h3{
+font-size: 4.5rem;
+}
+.text-sobrenos p{
+    margin-top: 20px;
+    font-size: 1.7rem;
+    color:rgb(97, 97, 97)
+}
+.text-sobrenos hr{
+    width: 160px;
+    border:1px solid blue;
+}
+/*===================
+Destaques
+=====================*/
+.destaques{
+    background-color: blue;
+    display: flex;
+    margin: auto;
+    height: 100px;
+}
+.text-destaques {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
 }

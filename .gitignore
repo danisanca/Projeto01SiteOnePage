@@ -1,0 +1,65 @@
+# ---------------------------------------------------FLEXBOX-------------------------------------------------------------
+* Alinha os itens em uma direção especifica (Horizontal ou Vertical
+)
+# Direciomanto---------------
+*  flex-direction:row            - Alinhas os objetos em coluna ou linha.
+*  flex-wrap:nowrap              - Permite a quebra de linha caso os itens ultrapase a largura maxima.
+*  flex-basis:20px               - Defineo tamanho basico do item.
+*  flex-grow: 1                  - Define quantas veses maior o objeto sera com relação aos outros objetos da div.
+*  flex-shirink:1                - Define quantas veses menor o objeto sera com relação aos outros objetos da div.
+
+# Alinhamento---------------
+*   justify-content: center;     - Justifica horizontalmente o objeto filho de onde foi declarada a propiedade.
+*   align-items: center;         - Justifica verticalmente o objeto filho de onde foi declarada a propiedade.
+*   align-content: flex-start;   - Alinhas os itens na vertical que possuem quebra de linha
+
+# Alinhando texto-----------
+*   text-align: center;          - Alinha o conteudo interno dos itens
+
+
+
+
+
+
+# ---------------------------------------------------GRID-------------------------------------------------------------
+* Bidimencional
+* Divisao via linhas e colunas
+
+# Propiedade do container definiçoes(Definições do objeto Pai)
+    * dsplay:grid                      - Define o container como grid
+    * grid-template-columns:2fr 1fr    - Define a quantidade/tamanho de colunas(Na linha esta definido 2 colunas onde a 1° é duas veses maior)
+    * grid-template-row: 20hv 70hv     - Define a quantidade/tamanho de linhas(Na linha esta definido a altura em hv das colunas declaradas )
+    
+    * grid gap: 20px                   - Define espaçamento(No caso esta aplicando o espaçamento de 20px entre as linhas e colunas)
+      * grid-row-gap:                  - Define o espaçamento das linhas(Aplica espaçamento somente entre linhas)
+      * grid-collumn-gap:              - Define o espaçamento das colunas(Aplica espaçamento somente entre colunas)
+    
+    * grid-template-areas:             - Define a area.
+#  Ex grid-template-areas
+    grid-template-areas: "header" "header"
+                         "main" "main"
+                         "footer" "footer"
+obs:declarar nos objetos filho em(grid areas) os nomes usados na definição do objeto pai
+
+# Propiedade dos itens de posicionamento(posicionamento do objeto Filho)
+   * grid-column              - Define em qual coluna o item ficara
+    - grid-colums-star:       - Define em qual posição o item ira começar  - *Deve ser declarado junto com o (grid-colums-end)
+    - grid-column-end:        - Define em qual posição o item ira terminar - *Deve ser declarado junto com o (grid-colums-star)
+  
+   * grid row                 - Define em qual linha o item ficara 
+    - grid-row-star
+    - grid-row-end
+   
+   * grid area                - Define em qual area o item ficara
+
+
+# Propiedades de alinhamento
+1. justify-content    - alinha o conteudo horizontalmente dos objetos filhos
+2. align-content      - alinha o conteudo verticalmente dos objetos filhos
+
+3. justify-items      - alinha o conteudo horizontalmente do ojeto filho com base na largura do objeto pai
+4. align-items        - alinha o conteudo verticalmente dos objetos filhos  com base na altura do objeto pai
+
+5. justify-self       - alinha o conteudo horizontalmente do objeto em que foi declado(aplicado direto no objeto filho) com base no espaço do objeto pai
+6. aling-self         - alinha o conteudo verticalmente do objeto em que foi declado(aplicado direto no objeto filho) com base no espaço do objeto pai
+

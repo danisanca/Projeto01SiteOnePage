@@ -1,5 +1,5 @@
 
-$('.slide-principal').slick({
+$('.slide-principal-img').slick({
     dots: true,
     infinite: true,
     speed: 300,

@@ -4,9 +4,10 @@ Portifolio do desenvolvedor
 
 # Icones
 
-:package: nova funcionalidade
-:up: Atualizações
-:beatle: correção de bug
-:checkered_flag: release
-
+:package: Novas Funcionalidades.
+:muscle: Atualizações de funcionalidades.
+:nerd_face: Correção de Bugs.
+:spider: Bugs.
+:checkered_flag: Release.
+:mega: Destaque.
 

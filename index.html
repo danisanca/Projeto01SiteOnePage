@@ -13,35 +13,45 @@
 <body>
   <main>
     <header>
-      <div class="col-header container">
+      <div class="col-header container" id="menuhome">
 
         <div class="imglogo">
           <img src="img/logo.png" alt="logosite">
         </div>
+
         <div class="menu-header">
           <ul>
-            <li><a href="">Galeria</a></li>
-            <li><a href="">Projetos</a></li>
-            <li><a href="">Quem Somos</a></li>
-            <li><a href="">Contato</a></li>
+            <li><a href="#Sobrenos">Sobre Nós</a></li>
+            <li><a href="#nossosservicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="redes-sociais-header">
+          <ul>
+            <li><i class="fab fa-facebook"></i></li>
+            <li><i class="fab fa-whatsapp"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
           </ul>
         </div>
 
       </div>
     </header>
 
-    <section class="slide-principal">
+    <section>
+      <div class="slide-principal">
 
-      <div class="slide-principal-img">
 
-        <img src="./img/imagem1.jpeg" alt="Construção">
-        <img src="./img/imagem2.jpeg" alt="Predios altos">
+        <div class="slide-principal-img">
 
+          <img src="./img/imagem1.jpeg" alt="Construção">
+          <img src="./img/imagem2.jpeg" alt="Predios altos">
+
+        </div>
+        <div class="slide-principal-rodape">
+          <p>PROJETANDO IDEIAS E CONTRUINDO SONHOS </p>
+        </div>
       </div>
-      <div class="slide-principal-rodape">
-        <p>PROJETANDO IDEIAS E CONTRUINDO SONHOS </p>
-      </div>
-
     </section>
 
     <section>
@@ -52,7 +62,7 @@
         </div>
 
         <div class="text-sobrenos">
-          <h3>SOBRE NÓS</h3>
+          <h3 id="Sobrenos">Sobre nós</h3>
           <hr>
           <p>Contamos com profissionais bem qualificados<br>
             em nossa equipe. Conduzimos nosssas atividades<br>
@@ -80,7 +90,7 @@
     <section>
       <div class="nossos-servicos container">
         <div class="nossos-servicos-title">
-          <h3>Nossos Serviços</h3>
+          <h3 id="nossosservicos">Nossos Serviços</h3>
           <hr>
         </div>
         <div class="cards">
@@ -124,21 +134,21 @@
       <div class="contatos">
         <div class="title">
           <hr>
-          <h2>Contato</h2>
+          <h2 id="contato">Contato</h2>
           <hr>
         </div>
 
         <form>
           <div class="input-group">
-          <input type="text" class="field" id="nome">
+            <input type="text" class="field" id="nome" placeholder="Nome" maxlength="50">
           </div>
           <div class="input-group">
-            <input type="text" class="field" id="nome">
-            </div>
-            <div class="input-group">
-              <input type="text" class="field" id="nome">
-            </div>
-            <button type="submit">Enviar</button>
+            <input type="text" class="field" id="nome" placeholder="Email" maxlength="50">
+          </div>
+          <div class="input-group">
+            <textarea class="field" placeholder="Mensagem" maxlength="500"></textarea>
+          </div>
+          <button type="submit">Enviar</button>
         </form>
 
         <h3>Equipe</h3>
@@ -151,7 +161,7 @@
               <p>Engenheiro Civil - CREA/?? 000111222-3</p>
               <h4>+55 (xx) - 9 9988-7766 </h4>
             </div>
-  
+
             <div class="eng">
               <i class="fas fa-mobile-alt"></i>
               <h5>Lorem Ipsum</h5>
@@ -159,17 +169,26 @@
               <h4>+55 (xx) - 9 6677-8899 </h4>
             </div>
           </div>
-          
+
           <hr>
         </div>
 
-        
+
 
       </div>
 
     </section>
-
-
+    <aside>
+      <div class="button-home">
+        <a href="#menuhome"><i class="fas fa-arrow-up"></i></a>
+        
+      </div>
+    </aside>
+    <footer>
+      <div class="rodape">
+        <small>&copy Todos os direitos reservados</small>
+      </div>
+    </footer>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

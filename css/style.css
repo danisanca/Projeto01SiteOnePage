@@ -45,7 +45,14 @@ header{
     justify-content: space-around;
     align-items: center;
 }
+.imglogo{
+    width: 20%;
+    height: 100%;
+}
 .imglogo img{
+    position: absolute;
+    top:4%;
+    left:2%;
     padding:5px;
 }
 .menu-header ul{
@@ -76,7 +83,7 @@ color: rgb(33, 82, 175);
     margin: auto;
 }
 .redes-sociais-header ul li{
-    margin-left: 5rem;
+   padding: 0 3rem;
 }
 .redes-sociais-header ul li:nth-child(1){
     margin-left: 0rem;
@@ -290,14 +297,11 @@ Contato
     position: relative;
     padding: 3rem;
 }
-.title h2{
-    font-size: 4.5rem;
-    text-transform: uppercase;
-}
+
 .title hr:nth-child(1){
     width: 50px;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 30%;
     border: none;
     border-bottom:0.3rem solid blue;
@@ -306,22 +310,25 @@ Contato
 .title hr:nth-child(3){
     width: 50px;
     position: absolute;
-    top: 50%;
+    top: 55%;
     right: 30%;
     border: none;
     border-bottom:0.3rem solid blue;
     margin-bottom: 3.5rem;
 }
 form{
-    width: 40%;
+    width: 35%;
     height: 35rem;
     align-self: center;
     background-color: rgb(164, 204, 250);
     border-radius: 0.8rem;
     padding: 2rem;
+    
 }
 .input-group{
     padding: 1.5rem;
+    display: flex;
+    justify-content: center;
 }
 .field{
     width: 30rem;
@@ -364,7 +371,7 @@ form button:hover{
     display: flex;
 }
 .contatos h3{
-    font-size: 3.5rem;  
+    font-size: 4.5rem;  
     margin-top: 5rem;
     margin-bottom: 3rem;
     text-transform: uppercase;
@@ -430,3 +437,4 @@ Rodapé
     background-color: black;
     color:white;
 }
+

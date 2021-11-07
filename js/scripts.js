@@ -10,28 +10,32 @@ $('.slide-principal-img').slick({
   });
 
 
+  //Atribur class para manipular menu hamburger e propiedads
 document.querySelector(".Menu-Mobile").addEventListener("click",()=>
-  
-    document.querySelector(".menu").classList.toggle("show-menu")
-    
-);
+  {
+    document.querySelector(".Main-body").classList.toggle("show-menu");
+    desativarScroll();
+  });
 
-function iconeinicio(){
-const windowTop = window.pageYOffset;
-const icone = document.querySelector(".button-home");
-let showbutton = false;
-if(windowTop > 420){
-  document.querySelector(".button-home").classList.add("show")
-}
-else{
-  
-    document.querySelector(".button-home").classList.remove("show")
-  
-}
-console.log(windowTop);
 
-}
+//Desativar menu hamburger e ativar Scroll
+document.querySelector(".menu-link").addEventListener("click",()=>{
+  if(document.querySelector(".show-menu") != null){
+    document.querySelector(".Main-body").classList.toggle("show-menu")
+    desativarScroll();
+  }
+  
 
-window.addEventListener('scroll', () => {
-  iconeinicio();
-})
+});
+
+//Desativa o scroll quando abrir o menu hamburger
+function desativarScroll(){
+  if(document.querySelector(".show-menu") != null){
+    console.log("menu aberto")
+    document.querySelector("body").classList.toggle("disable-scroll")
+  }
+  else{
+    console.log("menu fexado")
+    document.querySelector("body").classList.toggle("disable-scroll")
+  }
+}
